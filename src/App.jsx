@@ -1,4 +1,4 @@
-import { Route, Routes } from 'react-router-dom';
+import { HashRouter, Route, Routes } from 'react-router-dom';
 import Home from './components/Home/index.jsx';
 import About from './components/About/index.jsx';
 import Contact from './components/Contact/index.jsx';
@@ -8,11 +8,13 @@ import Portfolio from './components/PortFolio/Portfolio.jsx';
 import Contactpart from './components/Contact/Contact.jsx';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '@coreui/coreui/dist/css/coreui.min.css'
+
 import './App.scss'
 
 function App() {
   return (
     <>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<Layout />}> 
           <Route index element={<Home />} /> 
@@ -23,6 +25,7 @@ function App() {
           {/* <Route path="/dashboard" element={<Dashboard />} />  */}
          </Route>
       </Routes>
+      </HashRouter>
       
     </>
   )
