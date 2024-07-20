@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200..1000&family=Playwrite+AU+VIC:wght@100..400&family=Playwrite+ES:wght@100..400&family=Playwrite+US+Trad:wght@100..400&family=Roboto+Slab:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:wght@500&display=swap');
+
+.container.portfolio-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.ptext-zone {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.aboutflex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.card-container {
+  flex: 1;
+  margin: 10px;
+}
+
+.custom-card {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.custom-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.custom-card-title {
+  color:#fff;
+}
+
+a{
+  
+color:#fff;
+font-size: large;
+}
+.custom-card-text {
+  font-family: 'Lora', serif;
+  color:#fff;
+}
+
+.card-body {
+  font-family: 'Nunito', sans-serif;
+}
+
+// Import Google Fonts
+
+// Use Google Fonts
+// body {
+//   font-family: 'Nunito', sans-serif;
+// }
+
+// h1, h2, h3, h4, h5, h6 {
+//   font-family: 'Roboto Slab', serif;
+// }
+
+// p, a, li, span {
+//   font-family: 'Lora', serif;
+// }

@@ -1,0 +1,30 @@
+.container {
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  padding: 20px;
+}
+
+.text-zone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 20px;
+}
+
+.aboutflex {
+  display: flex; /* Arrange accordion components in a row */
+  justify-content: space-between; /* Space them evenly */
+  width: 100%;
+  max-width: 1200px; /* Optional: Set a max width for better layout */
+}
+
+.accordion-container {
+  flex: 1; /* Allow accordion containers to grow and fill available space */
+  margin: 0 10px; /* Add some space between columns */
+}
+
+.accordion-container:nth-child(2) {
+  margin-left: 20px; /* Optional: Add extra space between the two columns */
+}
