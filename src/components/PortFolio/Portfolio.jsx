@@ -79,7 +79,7 @@ const Portfolio = () => {
           </div>
         </div>
       </div>
-      <LinearWithValueLabel progress={60} />
+      <LinearWithValueLabel progress={50} />
     </div>
   );
 }

@@ -57,7 +57,7 @@ const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
   padding: theme.spacing(2),
   color: '#ffd700', // Set text color
   fontFamily: "Playwrite US Trad", 
-  fontSize: '2.2rem', // Set font size
+  fontSize: '1.2rem', // Set font size
   backgroundColor: '#21023cfb', // Match background color to the about section
 }));
 

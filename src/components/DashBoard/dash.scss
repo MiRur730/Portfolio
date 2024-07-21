@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@100..400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:wght@500&display=swap');
 
-.container.portfolio-page {
+.container.dashboard-page {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -10,7 +10,7 @@
   padding: 20px;
 }
 
-.ptext-zone {
+.dtext-zone {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
@@ -32,27 +32,24 @@
 .custom-card {
   transition: transform 0.3s, box-shadow 0.3s;
 }
+.custom-card-text{
+  font-family: cursive;
+}
 
 .custom-card:hover {
   transform: scale(1.05);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.custom-card-title {
-  color:#fff;
-}
+
 
 a{
   
 color:#fff;
 font-size: large;
 }
-.custom-card-text {
-  font-family: 'Lora', serif;
-  color:#fff;
-}
+
 
 .card-body {
   font-family: 'Nunito', sans-serif;
 }
-

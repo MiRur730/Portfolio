@@ -1,38 +1,3 @@
-// // import * as React from 'react';
-// import PropTypes from 'prop-types';
-// import LinearProgress from '@mui/material/LinearProgress';
-// import Typography from '@mui/material/Typography';
-// import Box from '@mui/material/Box';
-
-// function LinearProgressWithLabel(props) {
-//   return (
-//     <Box sx={{ display: 'flex', alignItems: 'center' }}>
-//       <Box sx={{ width: '100%', mr: 1 }}>
-//         <LinearProgress variant="determinate" {...props} />
-//       </Box>
-//       <Box sx={{ minWidth: 35 }}>
-//         <Typography variant="body2" color="text.secondary">{`${Math.round(
-//           props.value,
-//         )}%`}</Typography>
-//       </Box>
-//     </Box>
-//   );
-// }
-
-// LinearProgressWithLabel.propTypes = {
-  
-//   value: PropTypes.number.isRequired,
-// };
-
-// export default function LinearWithValueLabel({progress}) {
- 
-
-//   return (
-//     <Box sx={{ width: '100%' }}>
-//       <LinearProgressWithLabel value={progress} />
-//     </Box>
-//   );
-// }
 import { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import LinearProgress from '@mui/material/LinearProgress';
@@ -44,16 +9,10 @@ function LinearProgressWithLabel(props) {
 
   // Determine the color based on the progress value
   const getColor = (value) => {
-    if (value == 20 || value==60) return 'error';
-    if  (value==40|| value ==80) return 'warning';
+    if (value === 20 || value === 60) return 'error';
+    if (value === 40 || value === 80) return 'warning';
     return 'success';
   };
-  // const getColor = (value) => {
-  //   if (value == 20 || value==60) return '#DF0030';  // Red
-  //   if(value==40|| value ==) return '#ffd700';
-
-    
-  // };
 
   return (
     <Box sx={{ display: 'flex', alignItems: 'center' }}>
@@ -95,7 +54,19 @@ export default function LinearWithValueLabel({ progress }) {
   }, [progress]);
 
   return (
-    <Box sx={{ width: '130%' }} sy={{height:'120px'}}>
+    <Box 
+      sx={{ 
+        width: '100%', 
+        maxWidth: '100%', 
+        height: 'auto', 
+        '@media (min-width: 600px)': {
+          width: '130%',
+        }, 
+        '@media (max-width: 599px)': {
+          width: '90%',
+        },
+      }}
+    >
       <LinearProgressWithLabel value={progressValue} />
     </Box>
   );
@@ -104,3 +75,4 @@ export default function LinearWithValueLabel({ progress }) {
 LinearWithValueLabel.propTypes = {
   progress: PropTypes.number.isRequired,
 };
+

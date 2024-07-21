@@ -1,14 +1,12 @@
-import './index.scss'
-import { useState } from 'react'
-
-
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import './index.scss';
+import { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faLinkedin,
   faGithub,
   faYoutube,
   faMedium,
-} from '@fortawesome/free-brands-svg-icons'
+} from '@fortawesome/free-brands-svg-icons';
 import {
   faHome,
   faUser,
@@ -16,44 +14,36 @@ import {
   faSuitcase,
   faBars,
   faClose,
-} from '@fortawesome/free-solid-svg-icons'
-import { Link, NavLink } from 'react-router-dom'
+  faCertificate,
+} from '@fortawesome/free-solid-svg-icons';
+import { Link, NavLink } from 'react-router-dom';
 
 const Sidebar = () => {
   const [showNav, setShowNav] = useState(false);
 
   return (
     <div className="nav-bar">
-      <Link 
-        className="logo"
-        to="/"
-        onClick={() => setShowNav(false)}>
-        
-        
+      <Link className="logo" to="/" onClick={() => setShowNav(false)}>
+        {/* Add logo here if you have one */}
       </Link>
       <nav className={showNav ? 'mobile-show' : ''}>
-
-
-
-
-        <NavLink 
+        <NavLink
           exact="true"
           activeclassname="active"
           to="/"
-          onClick={() => setShowNav(false)}>
+          onClick={() => setShowNav(false)}
+        >
           <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
         </NavLink>
 
-
-
-        <NavLink 
+        <NavLink
           activeclassname="active"
           className="about-link"
           to="/about"
-          onClick={() => setShowNav(false)}>
+          onClick={() => setShowNav(false)}
+        >
           <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
         </NavLink>
-
 
         <NavLink
           activeclassname="active"
@@ -64,6 +54,14 @@ const Sidebar = () => {
           <FontAwesomeIcon icon={faSuitcase} color="#4d4d4e" />
         </NavLink>
 
+        <NavLink
+          activeclassname="active"
+          className="dashboard-link"
+          to="/dashboard"
+          onClick={() => setShowNav(false)}
+        >
+          <FontAwesomeIcon icon={faCertificate} color="#4d4d4e" />
+        </NavLink>
 
         <NavLink
           activeclassname="active"
@@ -74,24 +72,20 @@ const Sidebar = () => {
           <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
         </NavLink>
 
-
-        <FontAwesomeIcon 
+        <FontAwesomeIcon
           onClick={() => setShowNav(false)}
           icon={faClose}
           color="#ffd700"
           size="3x"
-          className='close-icon' />
-          
+          className="close-icon"
+        />
       </nav>
-
-      
-
 
       <ul>
         <li>
           <a
             href="https://www.linkedin.com/in/mitalirajput/"
-            target="_blank"// new page opened for gihuv
+            target="_blank"
             rel="noreferrer"
           >
             <FontAwesomeIcon
@@ -102,11 +96,7 @@ const Sidebar = () => {
           </a>
         </li>
         <li>
-          <a
-            href="https://github.com/MiRur730"
-            target="_blank"
-            rel="noreferrer"
-          >
+          <a href="https://github.com/MiRur730" target="_blank" rel="noreferrer">
             <FontAwesomeIcon
               icon={faGithub}
               color="#4d4d4e"
@@ -114,12 +104,11 @@ const Sidebar = () => {
             />
           </a>
         </li>
-
         <li>
           <a
             href="https://www.youtube.com/@mitalisalaria265"
-            rel="noreferrer"
             target="_blank"
+            rel="noreferrer"
           >
             <FontAwesomeIcon
               icon={faYoutube}
@@ -128,26 +117,25 @@ const Sidebar = () => {
             />
           </a>
         </li>
-
-
         <li>
-          <a href="https://medium.com/@MiRur730" rel="noreferrer" target="_blank">
+          <a href="https://medium.com/@MiRur730" target="_blank" rel="noreferrer">
             <FontAwesomeIcon
-            icon={faMedium} 
+              icon={faMedium}
               color="#4d4d4e"
               className="anchor-icon"
             />
           </a>
         </li>
       </ul>
-      <FontAwesomeIcon 
-          onClick={() => setShowNav(true)}
-          icon={faBars}
-          color="#ffd700"
-          size="3x"
-          className='hamburger-icon' />
+      <FontAwesomeIcon
+        onClick={() => setShowNav(true)}
+        icon={faBars}
+        color="#ffd700"
+        size="3x"
+        className="hamburger-icon"
+      />
     </div>
-  )
-}
+  );
+};
 
 export default Sidebar;
