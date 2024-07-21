@@ -1,4 +1,3 @@
-
 import { useEffect, useState } from 'react';
 import AnimatedLetters from '../AnimatedLetters/index.jsx';
 import './port.scss';
@@ -30,10 +29,10 @@ const Portfolio = () => {
             />
           </h1>
           
-          <div className="aboutflex">
+          <div style={{display:'flex'}}>
             <div className="card-container">
-              <div style={{ width: '30rem', margin: '15px' , height: '500px'}} className="custom-card">
-                <Card.Img variant="top" src="bot.png" />
+              <div style={{ width: '25rem', margin: '10px' , height: '500px'}} className="custom-card">
+                <Card.Img variant="top" src="bot.png" style={{ width: '25rem', height: '250px'}}/>
                 <Card.Body>
                   <Card.Title style={{ color:'#ffd700',fontSize:'2rem',marginTop:'10px'}}>TU-BOT</Card.Title>
                   <Card.Text className="custom-card-text">
@@ -47,8 +46,8 @@ const Portfolio = () => {
               </div>
             </div>
             <div className="card-container" >
-              <div style={{ width: '30rem', margin: '15px' , height: '500px'}} className="custom-card">
-                <Card.Img variant="top" style={{ width: '30rem', height: '300px' }} src="image2.webp" />
+              <div style={{ width: '25rem', margin: '15px' , height: '500px'}} className="custom-card">
+                <Card.Img variant="top" style={{ width: '25rem', height: '250px'}}  src="image2.webp" />
                 <Card.Body>
                   <Card.Title style={{ color:'#ffd700',fontSize:'2rem',marginTop:'10px'}}>VidyaVision</Card.Title>
                   <Card.Text className="custom-card-text">
@@ -62,8 +61,8 @@ const Portfolio = () => {
               </div>
             </div>
             <div className="card-container">
-              <div style={{ width: '30rem', margin: '15px' , height: '500px'}} className="custom-card">
-                <Card.Img variant="top" src="marsify.jpg" />
+              <div style={{ width: '25rem', margin: '15px' , height: '500px'}} className="custom-card">
+                <Card.Img  style={{ width: '25rem', height: '250px'}} variant="top" src="marsify.jpg" />
                 <Card.Body>
                   <Card.Title style={{ color:'#ffd700',fontSize:'2rem',marginTop:'10px'}}>Project Marsify</Card.Title>
                   <Card.Text >
@@ -82,6 +81,6 @@ const Portfolio = () => {
       <LinearWithValueLabel progress={50} />
     </div>
   );
-}
+};
 
 export default Portfolio;

@@ -57,7 +57,7 @@ export default function LinearWithValueLabel({ progress }) {
     <Box 
       sx={{ 
         width: '100%', 
-        maxWidth: '100%', 
+        maxWidth: '120%', 
         height: 'auto', 
         '@media (min-width: 600px)': {
           width: '130%',

@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200..1000&family=Playwrite+AU+VIC:wght@100..400&family=Playwrite+ES:wght@100..400&family=Playwrite+US+Trad:wght@100..400&family=Roboto+Slab:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@100..400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:wght@500&display=swap');
@@ -19,9 +20,8 @@
 
 .aboutflex {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 20px;
+ 
+  
 }
 
 .card-container {
@@ -55,4 +55,3 @@ font-size: large;
 .card-body {
   font-family: 'Nunito', sans-serif;
 }
-

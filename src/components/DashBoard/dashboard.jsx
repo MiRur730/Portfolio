@@ -39,11 +39,11 @@ const DashBoard = () => {
 
 
      <div className="card-container">
-              <div style={{ width: '35rem', margin: '-15px' , height: '200px'}} className="custom-card">
-                <Card.Img  style={{ width: '30rem' , height: '200px'}}variant="top" src="dc.jpeg" />
+              <div style={{ width: '30rem', margin: '-15px' , height: '200px'}} className="custom-card">
+                <Card.Img  style={{ width: '25rem' , height: '200px'}}variant="top" src="dc.jpeg" />
                 <Card.Body>
-                  <Card.Title style={{ color:'#DF0030',fontSize:'1.6rem',marginTop:'5px'}}>Certification by DC Office, Patiala</Card.Title>
-                  <Card.Text style={{ color:'#fff',fontSize:'1.3rem',marginTop:'5px'}} >
+                  <Card.Title style={{ color:'#DF0030',fontSize:'1.3rem',marginTop:'5px'}}>Certification by DC Office, Patiala</Card.Title>
+                  <Card.Text style={{ color:'#fff',fontSize:'1.0rem',marginTop:'5px'}} >
                   
 Certification by DC Office, Patiala: Achieved official recognition from DC Office, Patiala for leading the
 development of the Kisan Mitra Chatbot
@@ -54,11 +54,11 @@ development of the Kisan Mitra Chatbot
               </div>
             </div>
             <div className="card-container" >
-              <div style={{ width: '35rem', margin: '-15px' , height: '200px'}} className="custom-card">
-                <Card.Img variant="top" style={{ width: '30rem' , height: '200px'}} src="school.jpeg" />
+              <div style={{ width: '30rem', margin: '-15px' , height: '200px'}} className="custom-card">
+                <Card.Img variant="top" style={{ width: '25rem' , height: '200px'}} src="school.jpeg" />
                 <Card.Body>
-                  <Card.Title style={{ color:'#DF0030',fontSize:'1.6rem',marginTop:'5px'}}>Best Student of the Year.</Card.Title>
-                  <Card.Text style={{ color:'#fff',fontSize:'1.3rem',marginTop:'5px'}} >
+                  <Card.Title style={{ color:'#DF0030',fontSize:'1.3rem',marginTop:'5px'}}>Best Student of the Year.</Card.Title>
+                  <Card.Text style={{ color:'#fff',fontSize:'1.0rem',marginTop:'5px'}} >
                   Certificate of Appreciation for being the Best Student of the Year by Christ The King Convent School.
                   </Card.Text>
                 </Card.Body>
@@ -66,11 +66,11 @@ development of the Kisan Mitra Chatbot
               </div>
             </div>
             <div className="card-container">
-              <div style={{ width: '35rem', margin: '-15px' , height: '200px'}} className="custom-card">
-                <Card.Img style={{ width: '30rem' , height: '200px'}} variant="top" src="game.jpeg" />
+              <div style={{ width: '30rem', margin: '-15px' , height: '200px'}} className="custom-card">
+                <Card.Img style={{ width: '25rem' , height: '200px'}} variant="top" src="game.jpeg" />
                 <Card.Body>
-                  <Card.Title style={{ color:'#DF0030',fontSize:'1.6rem',marginTop:'5px'}}>Badminton</Card.Title>
-                  <Card.Text style={{ color:'#fff',fontSize:'1.3rem',marginTop:'5px'}}  >
+                  <Card.Title style={{ color:'#DF0030',fontSize:'1.3rem',marginTop:'5px'}}>Badminton</Card.Title>
+                  <Card.Text style={{ color:'#fff',fontSize:'1.0rem',marginTop:'5px'}}  >
                     First in Singles Girls Badminton in Inter School Sports Competition by ASISC.
                   </Card.Text>
                 </Card.Body>
@@ -86,11 +86,11 @@ development of the Kisan Mitra Chatbot
 
             <section style={{display:'flex',marginTop:'100px'}}>
             <div className="card-container">
-              <div style={{ width: '35rem', marginTop: '10px' , height: '200px'}} className="custom-card">
-                <Card.Img  style={{ width: '30rem' , height: '200px'}} variant="top" src="olympiad.jpeg" />
+              <div style={{ width: '30rem', marginTop: '10px', margin: '-15px' , height: '200px'}} className="custom-card">
+                <Card.Img  style={{ width: '25rem' , height: '200px'}} variant="top" src="olympiad.jpeg" />
                 <Card.Body>
-                  <Card.Title style={{ color:'#DF0030',fontSize:'1.6rem',marginTop:'5px'}}>ConQUEST Olympiad</Card.Title>
-                  <Card.Text style={{ color:'#fff',fontSize:'1.3rem',marginTop:'5px'}}  >
+                  <Card.Title style={{ color:'#DF0030',fontSize:'1.3rem',marginTop:'5px'}}>ConQUEST Olympiad</Card.Title>
+                  <Card.Text style={{ color:'#fff',fontSize:'1.0rem',marginTop:'5px'}}  >
                     First Position in All India Intra School Round of Conquest Olympiad.
                   </Card.Text>
                 </Card.Body>
@@ -100,11 +100,11 @@ development of the Kisan Mitra Chatbot
             </div>
 
             <div className="card-container">
-              <div style={{ width: '35rem', margin: '10px' , height: '200px'}} className="custom-card">
-                <Card.Img style={{ width: '30rem' , height: '200px'}} variant="top" src="UX.jpeg" />
+              <div style={{ width: '30rem', marginTop: '-10px', height: '200px'}} className="custom-card">
+                <Card.Img style={{ width: '25rem' , height: '200px'}} variant="top" src="UX.jpeg" />
                 <Card.Body>
-                  <Card.Title style={{ color:'#DF0030',fontSize:'1.6rem',marginTop:'5px'}}>Foundations of User Experience (UX) Design</Card.Title>
-                  <Card.Text  style={{ color:'#fff',fontSize:'1.3rem',marginTop:'5px'}} >
+                  <Card.Title style={{ color:'#DF0030',fontSize:'1.3rem',marginTop:'5px'}}>Foundations of User Experience (UX) Design</Card.Title>
+                  <Card.Text  style={{ color:'#fff',fontSize:'1.0rem',marginTop:'5px',marginLeft:'80px'}} >
                   Certificate of Completion from Google
                   </Card.Text>
                 </Card.Body>
@@ -114,11 +114,11 @@ development of the Kisan Mitra Chatbot
             </div>
 
             <div className="card-container">
-              <div style={{ width: '35rem', margin: '10px' , height: '200px'}} className="custom-card">
-                <Card.Img style={{ width: '30rem' , height: '200px'}} variant="top" src=" Crypto.jpeg" />
+              <div style={{ width: '30rem', marginTop: '10px' , margin: '-15px', height: '200px'}} className="custom-card">
+                <Card.Img style={{ width: '25rem' , height: '200px'}} variant="top" src=" Crypto.jpeg" />
                 <Card.Body>
-                  <Card.Title style={{ color:'#DF0030',fontSize:'1.6rem',marginTop:'5px'}}>Blockchain and Cryptocurrency Explained</Card.Title>
-                  <Card.Text  style={{ color:'#fff',fontSize:'1.3rem',marginTop:'5px'}} >
+                  <Card.Title style={{ color:'#DF0030',fontSize:'1.3rem',marginTop:'5px'}}>Blockchain and Cryptocurrency Explained</Card.Title>
+                  <Card.Text  style={{ color:'#fff',fontSize:'1.0rem',marginTop:'5px',marginLeft:'80px'}} >
                   Certification from University of Michigan
                   </Card.Text>
                 </Card.Body>

@@ -65,7 +65,7 @@ const Contact = () => {
           </MapContainer>
         </div> 
       </div> 
-      <LinearWithValueLabel progress={80}/>
+      <LinearWithValueLabel progress={100}/>
     </>
   )
 }
